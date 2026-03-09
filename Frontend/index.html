@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PropertyWorks | Professional Property Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top site-navbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4 text-white" href="#home">Property Works</a>
+        <button
+          class="navbar-toggler shadow-none border-0 text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="bi bi-list fs-2"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#properties">Properties</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          <div class="d-flex gap-2 ms-lg-3">
+            <a href="admin.html" class="btn btn-outline-light">Admin Panel</a>
+            <a href="#contact" class="btn btn-accent">Book Consultation</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="hero-section d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <p class="text-uppercase small text-info fw-semibold mb-2">Trusted Property Partner</p>
+            <h1 class="display-5 fw-bold lh-sm mb-3">
+              End-to-End Property Solutions for Modern Businesses
+            </h1>
+            <p class="lead text-light-emphasis mb-4">
+              We help organizations acquire, manage, and optimize commercial properties
+              with strategic planning and transparent execution.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#properties" class="btn btn-accent btn-lg px-4">View Properties</a>
+              <a href="#services" class="btn btn-outline-light btn-lg px-4">Our Services</a>
+            </div>
+            <div class="d-flex flex-wrap gap-4 pt-4 stats-strip">
+              <div>
+                <h3 class="mb-0 fw-bold">100+</h3>
+                <small>Projects Delivered</small>
+              </div>
+              <div>
+                <h3 class="mb-0 fw-bold">Rs 20-25 lakh</h3>
+                <small>Asset Value Managed</small>
+              </div>
+              <div>
+                <h3 class="mb-0 fw-bold">97%</h3>
+                <small>Client Retention</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div id="heroPreviewCarousel" class="carousel slide preview-carousel mb-4" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroPreviewCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroPreviewCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroPreviewCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner rounded-4">
+                <div class="carousel-item active">
+                  <img
+                    src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1200&q=80"
+                    class="d-block w-100"
+                    alt="Corporate office interior"
+                  />
+                  <div class="carousel-caption text-start">
+                    <h6 class="mb-1">Corporate Office Spaces</h6>
+                    <p class="mb-0">Premium locations for growing teams.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1200&q=80"
+                    class="d-block w-100"
+                    alt="Industrial warehouse preview"
+                  />
+                  <div class="carousel-caption text-start">
+                    <h6 class="mb-1">Industrial & Logistics</h6>
+                    <p class="mb-0">High-capacity sites built for scale.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80"
+                    class="d-block w-100"
+                    alt="Retail destination preview"
+                  />
+                  <div class="carousel-caption text-start">
+                    <h6 class="mb-1">Retail Destinations</h6>
+                    <p class="mb-0">Strategic visibility in high-footfall areas.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#heroPreviewCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#heroPreviewCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="hero-card p-4 p-md-5">
+              <h5 class="fw-semibold mb-3">Get a Property Strategy Report</h5>
+              <p class="text-muted mb-4">
+                Receive tailored recommendations based on your business location, budget, and growth goals.
+              </p>
+              <form
+                id="heroForm"
+                action="https://formsubmit.co/aniketsain685@gmail.com"
+                method="POST"
+                data-mail-submit="true"
+              >
+                <input type="hidden" name="_subject" value="New Hero Form Submission - PropertyWorks" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="text" name="_honey" style="display: none" tabindex="-1" autocomplete="off" />
+                <div class="mb-3">
+                  <label for="heroName" class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="heroName"
+                    name="full_name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="heroEmail" class="form-label">Work Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="heroEmail"
+                    name="work_email"
+                    placeholder="name@company.com"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-dark w-100">Request Report</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="services" class="py-5 section-space section-dark">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="text-uppercase small text-primary fw-semibold mb-2">Core Services</p>
+          <h2 class="fw-bold">What PropertyWorks Delivers</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card h-100">
+              <i class="bi bi-buildings fs-3 icon-badge"></i>
+              <h5 class="fw-semibold mt-3">Commercial Brokerage</h5>
+              <p class="text-muted mb-0">Market intelligence and negotiation support for optimal acquisition.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card h-100">
+              <i class="bi bi-bar-chart-line fs-3 icon-badge"></i>
+              <h5 class="fw-semibold mt-3">Portfolio Strategy</h5>
+              <p class="text-muted mb-0">Data-driven planning to maximize ROI across your property portfolio.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card h-100">
+              <i class="bi bi-tools fs-3 icon-badge"></i>
+              <h5 class="fw-semibold mt-3">Facility Operations</h5>
+              <p class="text-muted mb-0">Proactive maintenance and vendor management to reduce downtime.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card h-100">
+              <i class="bi bi-shield-check fs-3 icon-badge"></i>
+              <h5 class="fw-semibold mt-3">Compliance Advisory</h5>
+              <p class="text-muted mb-0">Regulatory guidance and risk monitoring for secure operations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="properties" class="py-5 section-space section-light">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-3">
+          <div>
+            <p class="text-uppercase small text-primary fw-semibold mb-2">Featured Listings</p>
+            <h2 class="fw-bold mb-0">High-Performance Business Spaces</h2>
+          </div>
+          <a href="Properties.html" class="btn btn-outline-dark">See more</a>
+        </div>
+        <div id="featuredPropertyStatus" class="property-status">Loading featured properties...</div>
+        <div class="row g-4" id="featuredPropertyGrid"></div>
+      </div>
+    </section>
+
+    <section id="about" class="py-5 section-space section-dark">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <p class="text-uppercase small text-primary fw-semibold mb-2">Why Choose Us</p>
+            <h2 class="fw-bold mb-3">Built for Corporate Property Performance</h2>
+            <p class="text-muted">
+              PropertyWorks combines deep real estate expertise, modern analytics, and operational discipline
+              to help businesses scale with confidence.
+            </p>
+            <ul class="list-unstyled pt-2">
+              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Dedicated account leadership</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Transparent reporting cadence</li>
+              <li><i class="bi bi-check2-circle text-success me-2"></i>National partner and vendor network</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="timeline-card p-4">
+              <h5 class="fw-semibold mb-4">Our Engagement Process</h5>
+              <div class="timeline-step">
+                <span>1</span>
+                <p class="mb-0"><strong>Discovery:</strong> Understand your business goals and site requirements.</p>
+              </div>
+              <div class="timeline-step">
+                <span>2</span>
+                <p class="mb-0"><strong>Strategy:</strong> Build a market-backed plan with budget scenarios.</p>
+              </div>
+              <div class="timeline-step mb-0">
+                <span>3</span>
+                <p class="mb-0"><strong>Execution:</strong> Deliver acquisition, setup, and continuous optimization.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 section-space section-light">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="testimonial-card h-100">
+              <p class="mb-3">
+                "PropertyWorks restructured our multi-city office footprint and reduced total occupancy cost by 18%."
+              </p>
+              <h6 class="mb-0 fw-semibold">Angela Carter</h6>
+              <small class="text-muted">COO, Elevate Systems</small>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="testimonial-card h-100">
+              <p class="mb-3">
+                "Their team brought discipline to our facilities operations and gave us real visibility into performance."
+              </p>
+              <h6 class="mb-0 fw-semibold">Michael Rios</h6>
+              <small class="text-muted">Director of Operations, NXT Commerce</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5 section-space contact-section">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-8 text-white">
+            <p class="text-uppercase small text-info fw-semibold mb-2">Contact Us</p>
+            <h2 class="fw-bold mb-3">Ready to Discuss Your Property Goals?</h2>
+            <p class="mb-4 text-light-emphasis">
+              Speak with our property specialists and get a customized action plan for your next phase of growth.
+            </p>
+            <p class="mb-1"><i class="bi bi-envelope me-2"></i>aniketsain685@gmail.com</p>
+            <p class="mb-1"><i class="bi bi-telephone me-2"></i>+91 9460006458, +91 7891441441</p>
+            <p class="mb-0"><i class="bi bi-geo-alt me-2"></i>Alwar Rajasthan, Reeal estate Property, RP</p>
+            <a
+              href="https://wa.me/919460006458?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20properties."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-success mt-4"
+            >
+              <i class="bi bi-whatsapp me-2"></i>Contact on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4 bg-dark text-center text-white-50">
+      <div class="container">
+        <small>Copyright <span id="year"></span> PropertyWorks. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

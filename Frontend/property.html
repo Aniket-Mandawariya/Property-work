@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PropertyWorks | Property Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-soft">
+    <nav class="navbar navbar-expand-lg fixed-top site-navbar scrolled">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4 text-white" href="index.html">PropertyWorks</a>
+        <div class="d-flex gap-2">
+          <a href="Properties.html" class="btn btn-outline-light">Back to Listings</a>
+          <a href="index.html" class="btn btn-accent">Home</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="property-detail-page py-5 mt-5">
+      <div class="container pt-4">
+        <div id="propertyDetailStatus" class="property-status">Loading property details...</div>
+
+        <section id="propertyDetailContent" class="d-none">
+          <section class="detail-block detail-hero">
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-7">
+                <img id="detailMainImage" class="detail-main-image" src="" alt="Property image" />
+              </div>
+              <div class="col-lg-5">
+                <p id="detailTypeBadge" class="property-type-badge mb-2">Property</p>
+                <h1 id="detailTitle" class="fw-bold mb-2">Property Title</h1>
+                <p id="detailLocation" class="text-muted mb-3">Location</p>
+                <p id="detailPrice" class="detail-price mb-3">Rs 0</p>
+                <p id="detailStore" class="mb-3"><strong>Store:</strong> -</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <a id="detailCallBtn" class="btn btn-outline-dark" href="#">Call Owner</a>
+                  <a id="detailWhatsAppBtn" class="btn btn-success d-none" href="#" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="detail-block">
+            <h2 class="h4 fw-bold mb-3">Overview</h2>
+            <p id="detailDescription" class="mb-0 text-muted">No description provided.</p>
+          </section>
+
+          <section class="detail-block">
+            <h2 class="h4 fw-bold mb-3">Property Specs</h2>
+            <div id="detailSpecs" class="row g-3"></div>
+          </section>
+
+          <section class="detail-block">
+            <h2 class="h4 fw-bold mb-3">Business Fit</h2>
+            <div id="detailBusinessFit" class="row g-3"></div>
+          </section>
+
+          <section class="detail-block">
+            <h2 class="h4 fw-bold mb-3">Pricing Breakdown</h2>
+            <div id="detailPricing" class="row g-3"></div>
+          </section>
+
+          <section class="detail-block">
+            <h2 class="h4 fw-bold mb-3">Media</h2>
+            <div id="detailGallery" class="row g-3 mb-3"></div>
+            <a id="detailVideoLink" class="btn btn-outline-primary d-none" href="#" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-play-circle me-2"></i>Watch Video Tour
+            </a>
+          </section>
+
+          <section class="detail-block">
+            <h2 class="h4 fw-bold mb-3">Contact</h2>
+            <div id="detailContact" class="row g-3"></div>
+          </section>
+
+          <section class="detail-block">
+            <h2 class="h4 fw-bold mb-3">Location</h2>
+            <div id="detailLocationInfo" class="row g-3 mb-3"></div>
+            <div id="detailMapWrap" class="d-none">
+              <iframe
+                id="detailMapFrame"
+                class="detail-map-frame"
+                src=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Property map"
+              ></iframe>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer class="py-4 bg-dark text-center text-white-50">
+      <div class="container">
+        <small>Copyright <span id="year"></span> PropertyWorks. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <script src="property-detail.js"></script>
+  </body>
+</html>
