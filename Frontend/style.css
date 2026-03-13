@@ -74,6 +74,10 @@ button,
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.2);
 }
 
+.hero-card h5 {
+  color: black;
+}
+
 .preview-carousel {
   border-radius: 1rem;
   overflow: hidden;
